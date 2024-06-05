@@ -1,5 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
   margin: 0;
+  background-color: #4c4c4c;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@font-face {
+  font-family: 'Terminal';
+  src: url('./assets/fonts/Terminal.ttf') format('truetype');
+  font-weight: 900; /* Black weight is typically 900 */
+  font-style: normal;
+}
+
+.font-terminal{
+  font-family: 'Terminal';
+  font-weight: 400; 
 }
