@@ -157,9 +157,9 @@ function App() {
     anime({
       targets: '.body',
       translateY: '-100%',
-      duration: 2000,
-      complete: () => {
-        navigate('/Main')
+      duration: 3500,
+      update: function(anim) {
+        Math.round(anim.progress) === 35 && navigate('/Main')
       }
     })
   }
