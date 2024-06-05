@@ -1,4 +1,4 @@
 
 ### Portafolio Link
 
-https://portafolio-flax-three.vercel.app/Main
+https://portafolio-flax-three.vercel.app
