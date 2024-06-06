@@ -1,0 +1,1 @@
+export {Tecnologies as default} from './Tecnologies'
