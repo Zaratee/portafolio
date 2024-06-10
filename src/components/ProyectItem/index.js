@@ -1,0 +1,1 @@
+export {ProyectItem as default} from './ProyectItem'

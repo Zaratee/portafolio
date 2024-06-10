@@ -1,0 +1,1 @@
+export {ProyectsContainer as default} from './ProyectsContainer'

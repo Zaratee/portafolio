@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import Ellipse from 'src/assets/forms/ellipse'
 import anime from 'animejs/lib/anime.es.js';
 
-export const Tecnologies = () => {
-  const [isFilterActive, setIsFilterActive] = useState(undefined)
+export const Tecnologies = (props) => {
+  const {handlerShowFilter, isFilterActive} = props
+  // const [isFilterActive, setIsFilterActive] = useState(undefined)
   const [isFilterVisible, setIsFilterVisible] = useState(false)
   useEffect(() => {
     if(isFilterActive == undefined ){
@@ -13,8 +14,8 @@ export const Tecnologies = () => {
       anime({
         targets: '.filter',
         keyframes: [
-          {translateX: 400},
           {translateX: 200},
+          {translateX: -128},
         ],
         easing: 'easeOutQuad',
         update: function(anim) {
@@ -25,23 +26,21 @@ export const Tecnologies = () => {
       anime({
         targets: '.filter',
         keyframes: [
+          {translateX: 128},
           {translateX: 200},
-          {translateX: 400},
         ],
         easing: 'easeOutQuad',
       });
     }
 
   }, [isFilterActive])
-  
-  const handlerShowFilter = (value) => {
-    setIsFilterActive(value)
-  }
+
 
   return (
-    <div className='flex relative justify-end items-center w-[100vw] h-[100vh]  overflow-hidden'>
-        <div id='ellipse' className={`${isFilterVisible ? 'visible' : 'hidden'} z-20 filter absolute translate-x-[400px]`}><Ellipse handlerShowFilter={handlerShowFilter}/></div>
-        <div onClick={()=>handlerShowFilter(true)} className=' bg-[#cecece] z-10 hover:translate-x-5 transition-all cursor-pointer -rotate-90 translate-x-6 pt-3 px-4 pb-6 select-none'>Filter</div>
+    <div className={`right-20 absolute top-[25%]`}>
+        <div className='relative'>
+            <div id='ellipse' className={`${isFilterVisible ? 'visible' : 'hidden'} z-50 filter absolute !top-[50%]`}><Ellipse handlerShowFilter={handlerShowFilter}/></div>
+        </div>
     </div>
   )
 }
