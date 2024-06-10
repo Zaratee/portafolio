@@ -4,7 +4,7 @@ import Tecnologies from 'src/components/Tecnologies';
 import WelcomeMessage from 'src/components/WelcomeMessage';
 
 export const MainLayout = () => {
-    const [messegeStatus, setMessegeStatus] = useState(false);//true
+    const [messegeStatus, setMessegeStatus] = useState(true);//true
     const [isFilterActive, setIsFilterActive] = useState(undefined)
     const navigate = useNavigate()
     const changeMessageStatus = () => {
