@@ -1,11 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 const Ellipse = (props) => {
   const {handlerShowFilter} = props
-  const [size, setSize] = useState(0)
-  useEffect(() => {
-    setSize(window.screen.height/2)
-  }, [])
   
   return (
     <svg className='z-40' width={400} height={400} viewBox="0 0 452 452" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,0 +1,1 @@
+export {SkillsModal as default} from './SkillsModal'

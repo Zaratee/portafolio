@@ -7,7 +7,7 @@ export const Tecnologies = (props) => {
   // const [isFilterActive, setIsFilterActive] = useState(undefined)
   const [isFilterVisible, setIsFilterVisible] = useState(false)
   useEffect(() => {
-    if(isFilterActive == undefined ){
+    if(isFilterActive === undefined ){
       return
     }
     if(isFilterActive){
