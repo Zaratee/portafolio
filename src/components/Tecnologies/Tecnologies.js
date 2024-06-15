@@ -39,7 +39,7 @@ export const Tecnologies = (props) => {
   return (
     <div className={`right-20 absolute top-[25%]`}>
         <div className='relative'>
-            <div id='ellipse' className={`${isFilterVisible ? 'visible' : 'hidden'} z-50 filter absolute !top-[50%]`}><Ellipse handlerShowFilter={handlerShowFilter}/></div>
+            <div id='ellipse' className={`${isFilterVisible ? 'visible' : 'hidden'} z-40 filter absolute !top-[50%]`}><Ellipse handlerShowFilter={handlerShowFilter}/></div>
         </div>
     </div>
   )

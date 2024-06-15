@@ -17,12 +17,12 @@ export const router = createBrowserRouter([
         element: <MainLayout/>,
         children: [
           {
-            path: "proyects",
+            path: "projects",
             element: <ProyectsContainer />,
           },
           {
             path: '*',
-            element: <Navigate to={'proyects'} />,
+            element: <Navigate to={'projects'} />,
           },
         ],
     },
