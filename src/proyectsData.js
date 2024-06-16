@@ -7,8 +7,9 @@ import ReactIcon from './assets/icons/react'
 export const moreSkills = ['adaptabilidad y flexibilidad','autodidacta','entendimiento','compromiso','Inglés','Bootstrap','Bug and Issue Tracking Tools - JIRA',
     'cli','Scrum agile','fast-learner','figma', 'flex', 'FullStack Jr', 'github','html','Ionic','Front-end','jira platform','Loopback','MySql','npm','PhpMyAdmin',
     'Operational Role - Freelancer','Project Management Software - JIRA','swift', 'Teacher','useEffect','REST API','JSON','Visual studio','Angular','Xcode','Firebase'
-    ,'postman','Bitbucket','Herramientas de Diseño','git cli']
-
+    ,'postman','Bitbucket','Herramientas de Diseño','git cli','Kotlin', 'css', 'JavaScript', 'React-Router', 'GraphQL', 'Redux', 'TypeScript', 'LocalStorage', 'Fetch', 
+    'API', 'MarvelAPI', 'moment', 'Notistack', 'MaterialUI', 'Amplify', ' Google Geocoding Api', 'Tailwind', 'React-pdf', 'Formik', 'Next.js ', 'svg', 'AnimeJs', 'SQLite'
+    ,'Java']
 export const allProjects = [
     {
         name: 'Gestor de citas acupunturista',
@@ -98,7 +99,7 @@ export const allProjects = [
         gitUrl: 'https://github.com/Zaratee/Calendario/tree/main',
         image: [],
         type: 'Proyecto Personal',
-        skill: ['Redux', 'Fetch', 'API', 'LocalStorage', 'TailWind', 'JavaScript' ]
+        skill: ['Redux', 'Fetch', 'API', 'LocalStorage', 'Tailwind', 'JavaScript' ]
     },
     {
         name: 'Calculadora',
