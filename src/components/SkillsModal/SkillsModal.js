@@ -38,7 +38,7 @@ export const SkillsModal = (props) => {
                 SKILLS
             </div>
             <div className=' relative  mt-3 overflow-y-auto h-[85%]'>
-                <div className='w-full h-[50px] fixed bg-gradient-to-b from-[#585858]' />
+                <div className='w-full h-[50px] left-0 fixed bg-gradient-to-b from-[#585858]' />
                 <div className='mt-[50px] mb-[50px] flex gap-3 flex-wrap '>
                 {moreSkills.map((skill)=>(
                     <SkillItem skill={skill}/>
