@@ -9,7 +9,7 @@ export const moreSkills = ['adaptabilidad y flexibilidad','autodidacta','entendi
     'Operational Role - Freelancer','Project Management Software - JIRA','swift', 'Teacher','useEffect','REST API','JSON','Visual studio','Angular','Xcode','Firebase'
     ,'postman','Bitbucket','Herramientas de Diseño','git cli','Kotlin', 'css', 'JavaScript', 'React-Router', 'GraphQL', 'Redux', 'TypeScript', 'LocalStorage', 'Fetch', 
     'API', 'MarvelAPI', 'moment', 'Notistack', 'MaterialUI', 'Amplify', ' Google Geocoding Api', 'Tailwind', 'React-pdf', 'Formik', 'Next.js ', 'svg', 'AnimeJs', 'SQLite'
-    ,'Java']
+    ,'Java', 'useContext']
 export const allProjects = [
     {
         name: 'Gestor de citas acupunturista',
@@ -45,7 +45,7 @@ export const allProjects = [
         gitUrl: 'https://portafolio-flax-three.vercel.app/',
         image: [],
         type: 'Proyecto Personal ',
-        skill: ['Tailwind', 'AnimeJs', 'JavaScript', 'React-Router', 'svg']
+        skill: ['Tailwind', 'AnimeJs', 'JavaScript', 'React-Router', 'svg', 'useContext']
     },
     {
         name: 'Sistema Deportivo Fútbol usuarios',
