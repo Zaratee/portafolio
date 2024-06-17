@@ -87,7 +87,7 @@ export const allProjects = [
         name: 'MarvelHeroes api',
         techno: { name: 'React', logo: ReactIcon },
         description: 'Aplicación web personal donde se hace uso de Fetch con MarvelAPI y manejando los datos con Redux',
-        gitUrl: 'https://9kt63y.csb.app/',
+        gitUrl: 'https://codesandbox.io/p/sandbox/heroesapi-9kt63y',
         image: [],
         type: 'Proyecto Personal ',
         skill: ['Redux', 'Fetch', 'MarvelAPI','JavaScript']
@@ -123,7 +123,7 @@ export const allProjects = [
         name: 'Vue Course',
         techno: { name: 'Vue', logo: VueIcon },
         description: 'Curso de Vue',
-        gitUrl: 'https://zhlgwx.csb.app/',
+        gitUrl: 'https://codesandbox.io/p/sandbox/vuecourse-zhlgwx?file=%2Fsrc%2Findex.html',
         image: [],
         type: 'Proyecto Personal',
         skill: ['JavaScript', 'css']
