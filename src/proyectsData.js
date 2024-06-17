@@ -8,7 +8,7 @@ export const moreSkills = ['adaptabilidad y flexibilidad','autodidacta','entendi
     'cli','Scrum agile','fast-learner','figma', 'flex', 'FullStack Jr', 'github','html','Ionic','Front-end','jira platform','Loopback','MySql','npm','PhpMyAdmin',
     'Operational Role - Freelancer','Project Management Software - JIRA','swift', 'Teacher','useEffect','REST API','JSON','Visual studio','Angular','Xcode','Firebase'
     ,'postman','Bitbucket','Herramientas de Diseño','git cli','Kotlin', 'css', 'JavaScript', 'React-Router', 'GraphQL', 'Redux', 'TypeScript', 'LocalStorage', 'Fetch', 
-    'API', 'MarvelAPI', 'moment', 'Notistack', 'MaterialUI', 'Amplify', ' Google Geocoding Api', 'Tailwind', 'React-pdf', 'Formik', 'Next.js ', 'svg', 'AnimeJs', 'SQLite'
+    'API', 'MarvelAPI', 'Moment.js', 'Notistack', 'MaterialUI', 'Amplify', ' Google Geocoding Api', 'Tailwind', 'React-pdf', 'Formik', 'Next.js ', 'svg', 'AnimeJs', 'SQLite'
     ,'Java', 'useContext']
 export const allProjects = [
     {
@@ -32,7 +32,7 @@ export const allProjects = [
     {
         name: 'Portafolio Anterior',
         techno: { name: 'React', logo: ReactIcon },
-        description: 'Mi primer portafolio que usé en su momento para mostrar mis proyectos',
+        description: 'Mi primer portafolio que usé en su Moment.jso para mostrar mis proyectos',
         gitUrl: 'https://github.com/Zaratee/myWebPage/tree/main',
         image: [],
         type: 'Proyecto Personal ',
@@ -54,7 +54,7 @@ export const allProjects = [
         gitUrl: 'https://deportivomorelos.com/',
         image: [],
         type: 'Freelance',
-        skill: ['css', 'Next.js ', 'moment', 'Formik', 'JavaScript', 'React-Router']
+        skill: ['css', 'Next.js ', 'Moment.js', 'Formik', 'JavaScript', 'React-Router']
     },
     {
         name: 'Sistema Deportivo Fútbol Administrador',
@@ -63,7 +63,7 @@ export const allProjects = [
         gitUrl: '',
         image: [],
         type: 'Freelance',
-        skill: ['Tailwind', 'Nextjs', 'React-pdf', 'moment', 'Formik', 'JavaScript', 'React-Router']
+        skill: ['Tailwind', 'Nextjs', 'React-pdf', 'Moment.js', 'Formik', 'JavaScript', 'React-Router']
     },
     {
         name: 'Sistema para solicitar de vehiculos de carga',
@@ -72,7 +72,7 @@ export const allProjects = [
         gitUrl: '',
         image: [],
         type: 'Freelance',
-        skill: ['Amplify', 'moment', 'JavaScript','React-Router', 'Redux', 'Notistack', 'MaterialUI', ' Google Geocoding Api']
+        skill: ['Amplify', 'Moment.js', 'JavaScript','React-Router', 'Redux', 'Notistack', 'MaterialUI', ' Google Geocoding Api']
     },
     {
         name: 'Administrador de inventario en hospital',
