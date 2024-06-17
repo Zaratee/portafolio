@@ -12,8 +12,8 @@ export const ProyectItem = (props) => {
         <div className=' text-sm  text-slate-400 font-light'>{type}</div>
         <div className=' font-light mt-3 text-slate-200'>{description}</div>
         <div className='mt-2 '>
-          {skill.sort().map((name)=>{return(
-            <div className='text-[#4adf81]'>»<span className='ml-[.35rem] text-slate-200'>{name}</span></div>
+          {skill.sort().map((name, index)=>{return(
+            <div key={index} className='text-[#4adf81]'>»<span className='ml-[.35rem] text-slate-200'>{name}</span></div>
           )})}
         </div>
         {
