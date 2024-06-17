@@ -99,7 +99,7 @@ export const allProjects = [
         gitUrl: 'https://github.com/Zaratee/Calendario/tree/main',
         image: [],
         type: 'Proyecto Personal',
-        skill: ['Redux', 'Fetch', 'API', 'LocalStorage', 'Tailwind', 'JavaScript' ]
+        skill: ['Redux', 'Fetch', 'API', 'LocalStorage', 'Tailwind', 'JavaScript', '(NO Calendar Libraries)' ]
     },
     {
         name: 'Calculadora',
