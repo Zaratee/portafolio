@@ -56,7 +56,7 @@ export const MainLayout = () => {
               <Outlet/>
             </div>
           }
-          <div>v2.0.0</div>
+          <div className='absolute right-0 bottom-0 text-white font-terminal text-xs '>v2.0.0</div>
       </FilterContext.Provider>
     </div>
   )

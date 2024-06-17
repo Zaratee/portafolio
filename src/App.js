@@ -190,6 +190,7 @@ function App() {
       {
         isButtonDisplayed && <a href='https://github.com/zaratee' className={`hover:scale-125 transition-all absolute left-[5%] bottom-[10%] cursor-pointer  `}><GithubIcon color={isHovered ? '#000': '#4adf81'} size={'60px'}/></a>
       }
+      <div className={` absolute right-0 bottom-0 ${isHovered ? 'text-black' :'text-white'}  font-terminal text-xs  `}>v2.0.0</div>
     </div>
   );
 }
