@@ -3,7 +3,9 @@ import { Outlet } from 'react-router-dom';
 import JavaIcon from 'src/assets/icons/java';
 import KotlinIcon from 'src/assets/icons/kotlin';
 import ReactIcon from 'src/assets/icons/react';
+import UserIcon from 'src/assets/icons/user';
 import VueIcon from 'src/assets/icons/vue';
+import ResumeModal from 'src/components/ResumeModal';
 import SkillsModal from 'src/components/SkillsModal';
 import Tecnologies from 'src/components/Tecnologies';
 import WelcomeMessage from 'src/components/WelcomeMessage';
@@ -13,6 +15,7 @@ export const MainLayout = () => {
     const [messegeStatus, setMessegeStatus] = useState(true);//true
     const [isFilterActive, setIsFilterActive] = useState(undefined)
     const [isSkillsActive, setIsSkillsActive] = useState(false)
+    const [isResumeActive, setIsResumeActive] = useState(false)
     const [filterSelection, setFilterSelection] = useState('All')
     
     const changeMessageStatus = () => {
@@ -25,6 +28,10 @@ export const MainLayout = () => {
     
     const handleShowSkillsModal = (value) => {
       setIsSkillsActive(value)
+    }
+
+    const handleShowResumeModal = (value) => {
+      setIsResumeActive(value)
     }
 
     const renderSwitchFilterIcon = () => {
@@ -47,11 +54,13 @@ export const MainLayout = () => {
         <FilterContext.Provider value={{filterSelection:filterSelection, setFilterSelection:setFilterSelection}}>
           {!messegeStatus && <div className=' rounded-full flex items-center justify-center w-[40px] h-[40px] bg-[#22272e] absolute font-bold select-none right-3 top-3 text-white'>{renderSwitchFilterIcon()}</div>}
           <SkillsModal isSkillsActive={isSkillsActive} handleShowSkillsModal={handleShowSkillsModal}/>
+          <ResumeModal isResumeActive={isResumeActive} handleShowResumeModal={handleShowResumeModal}/>
           {messegeStatus && <WelcomeMessage changeMessageStatus={changeMessageStatus} /> }
           {!messegeStatus && 
             <div className='relative'>
-              <div onClick={()=>handlerShowFilter(true)} className={`font-bold text-2xl z-10 -right-5 hover:-right-3 bg-[#cecece] top-[40%]  transition-all cursor-pointer -rotate-90  pt-3 px-4 pb-6 select-none absolute `}>Filter</div>
-              <div onClick={()=>setIsSkillsActive(true)} className={`font-bold text-2xl z-10 -left-5 hover:-left-3 bg-[#cecece] top-[40%]  transition-all cursor-pointer rotate-90  pt-3 px-4 pb-6 select-none absolute`}>Skills</div>
+              <div onClick={()=>handlerShowFilter(true)} className={`font-bold text-2xl z-10 -right-5 hover:-right-3 bg-[#cecece] top-[45%]  transition-all cursor-pointer -rotate-90  pt-3 px-4 pb-6 select-none absolute `}>Filter</div>
+              <div onClick={()=>setIsSkillsActive(true)} className={`font-bold text-2xl z-10 -left-5 hover:-left-3 bg-[#cecece] top-[45%]  transition-all cursor-pointer rotate-90  pt-3 px-4 pb-6 select-none absolute`}>Skills</div>
+              <div onClick={()=>setIsResumeActive(true)} className={`z-10 rounded-full flex items-center justify-center w-[40px] h-[40px] bg-[#22272e] transition-all cursor-pointer left-3 bottom-3 select-none absolute`}><UserIcon/></div>
               {isFilterActive && <Tecnologies handlerShowFilter={handlerShowFilter} isFilterActive={isFilterActive}/>} 
               <Outlet/>
             </div>

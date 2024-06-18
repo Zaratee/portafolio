@@ -1,0 +1,1 @@
+export {ResumeModal as default} from './ResumeModal'
