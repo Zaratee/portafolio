@@ -12,6 +12,19 @@ export const ProyectItem = (props) => {
         <div className=' text-sm  text-slate-400 font-light'>{type}</div>
         <div className=' font-light mt-3 text-slate-200'>{description}</div>
         <div className='mt-2 '>
+          {Object.hasOwn(projectInfo, 'wip') && 
+          <div className='flex gap-2 items-center'>
+            <span class="relative flex h-3 w-3 ">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4adf81] opacity-100"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-[#4adf81]"></span>
+            </span>
+            WIP
+            <span class="relative flex h-3 w-3 ">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#4adf81] opacity-100"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-[#4adf81]"></span>
+            </span>
+          </div>
+          }
           {skill.sort().map((name, index)=>{return(
             <div key={index} className='text-[#4adf81]'>»<span className='ml-[.35rem] text-slate-200'>{name}</span></div>
           )})}

@@ -57,6 +57,16 @@ export const allProjects = [
         skill: ['css', 'Next.js ', 'Moment.js', 'Formik', 'JavaScript', 'React-Router']
     },
     {
+        name: 'Mr.Guacamole',
+        techno: { name: 'React', logo: ReactIcon },
+        description: 'Plataforma para la visualizar la información de los productos de la tienda',
+        gitUrl: 'https://mr-guacamole.vercel.app/',
+        image: [],
+        type: 'Freelance',
+        wip: true,
+        skill: ['JavaScript', 'Tailwind' ]
+    },
+    {
         name: 'Sistema Deportivo Fútbol Administrador',
         techno: { name: 'React', logo: ReactIcon },
         description: 'Sistema Privado para usuario Administrador que sirve para la gestión de liguillas , crear eqipos, poner marcadores, postear noticias o avisos y un sistema para gestionar las imagenes mostradas en la página principal',
