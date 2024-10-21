@@ -112,6 +112,15 @@ export const allProjects = [
         skill: ['Redux', 'Fetch', 'API', 'LocalStorage', 'Tailwind', 'JavaScript', '(NO Calendar Libraries)' ]
     },
     {
+        name: 'WeatherApp',
+        techno: { name: 'React', logo: ReactIcon },
+        description: 'CRUD de usuarios donde se registran con el clima actual de su lat long proporcionada ',
+        gitUrl: 'https://weather-app-theta-two-97.vercel.app/home',
+        image: [],
+        type: 'Proyecto Personal',
+        skill: ['Redux', 'Axios', 'WeatherAPI', 'React Router', 'SCSS', 'JavaScript', 'Google Map' ]
+    },
+    {
         name: 'Calculadora',
         techno: { name: 'Kotlin', logo: KotlinIcon },
         description: 'Aplicación de calculadora para celulares Android',
