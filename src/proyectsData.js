@@ -63,7 +63,6 @@ export const allProjects = [
         gitUrl: 'https://mr-guacamole.vercel.app/',
         image: [],
         type: 'Freelance',
-        wip: true,
         skill: ['JavaScript', 'Tailwind' ]
     },
     {
@@ -97,7 +96,7 @@ export const allProjects = [
         name: 'MarvelHeroes api',
         techno: { name: 'React', logo: ReactIcon },
         description: 'Aplicación web personal donde se hace uso de Fetch con MarvelAPI y manejando los datos con Redux',
-        gitUrl: 'https://codesandbox.io/p/sandbox/heroesapi-9kt63y',
+        gitUrl: 'https://github.com/Zaratee/marvelHeroes',
         image: [],
         type: 'Proyecto Personal ',
         skill: ['Redux', 'Fetch', 'MarvelAPI','JavaScript']
